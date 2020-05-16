@@ -1,4 +1,4 @@
-FROM richxsl/rhel7:latest
+FROM centos
 
 RUN mkdir /opt/tomcat/
 
