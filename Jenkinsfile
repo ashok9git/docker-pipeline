@@ -4,7 +4,7 @@ node {
 
     docker.withRegistry('https://registry.hub.docker.com/ashok9dockhub', 'dockerhub') {
 
-        def customImage = docker.build("ashok_batch/tomcat-pipe")
+        def customImage = docker.build("tomcat-pipe")
 
         /* Push the container to the custom Registry */
         customImage.push()
