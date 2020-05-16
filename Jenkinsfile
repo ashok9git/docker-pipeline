@@ -2,7 +2,7 @@ node {
 
     checkout scm
 
-    docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
+    docker.withRegistry('https://registry.hub.docker.com/ashok9dockhub', 'dockerhub') {
 
         def customImage = docker.build("ashok_batch/tomcat-pipe")
 
